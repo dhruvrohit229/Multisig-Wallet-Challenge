@@ -96,7 +96,7 @@ impl MultiSig {
     }
 
     // The `submit_transaction` method submits a new transaction to the contract.
-    pub fn submit_transaction(&mut self, to: Address, value: U256, data: Bytes) -> Result<(), MultiSigError> {
+    pub fn submit_transaction_dhruv_rohit_229(&mut self, to: Address, value: U256, data: Bytes) -> Result<(), MultiSigError> {
         // The sender must be an owner.
         if !self.is_owner.get(msg::sender()) {
             return Err(MultiSigError::NotOwner(NotOwner{}));
